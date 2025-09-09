@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.barra-navegacao{
+    background-color: hotpink;
+    color:deeppink;
+    font-size: larger;
+}
+a{
+    margin-left: 5px;
+}
+.link-login{
+    margin-left: 150px;
+}
+
+.loja{
+    background-color: lightpink;
+    color:deeppink;
+}
+
+.img{
+    width: 300px;
+    height: 300px;
+}
+.longin{
+    background-color: lightpink;
+    color:deeppink;
+}
+
+.formulario{
+    background-color: lightpink;
+}
+
+.tela-login{
+margin: 1300px;
+}
