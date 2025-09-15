@@ -8,13 +8,66 @@
 </head>
 <body>
     <form class="formulario">
-    <label>Nome</label>
+    <label>Nome:</label><input type="Nome" placeholder="Digite seu Nome" class="nome"> 
     <!--Inserir 8m campo digitavel-->
     <input type="text" clss="input-nome"><br>
-    <!--Tipo senha-->
-    <label></label>
-    <input class="input-nome" placeholder="Digite uma senha" type="password"><br>
-    <input href="#" type="button" class="botao" value="Entrar">
+    <!--Tipo senha--> <!-- Input do tipo email -->
+    <label>Email: </label><input type="emai" placeholder="Digite seu email" class="email"> 
+
+    <br> 
+<!-- Incluindo checkbox(opções)-->
+ <input type="checkbox" class="checar"> Masculino <br>
+ <input type="checkbox" class="checar"> Feminino <br>
+  <input type="checkbox" class="checar"> Prefiro não informar <br>
+ 
+  <!-- Inserindo Data -->
+   <br><label for="">Data de nascimento</label>
+   <input type="date">
+   <input type="detetime-local">
+<br>
+
+
+     <!-- Input de seleção -->
+      <select>
+        <!-- O atributo value, enviará o valor do item selecionado -->
+         <!-- para o servidor -->
+        <option value="">Selecione o Estado</option>
+        <option value="primeiro médio">1° Médio</option>
+        <option value="segundo médio">2° Médio</option>
+        <option value="terceiro médio">3° Médio</option>
+      </select>
+
+    <select>
+      <option value=""selected>Selecione a escolaridade</option>
+        <option value="primeiro médio">1° Médio</option>
+        <option value="segundo médio">2° Médio</option>
+        <option value="terceiro médio">3° Médio</option>
+        </select>
+
+<!-- Input radio button -->
+ <p>Radio Button</p>
+ <input type="radio" name="tamanho">Pequeno
+  <input type="radio" name="tamanho">Medio
+   <input type="radio" name="tamanho">Grande
+    <input type="radio" name="tamanho">Outro
+    <br>
+    <p>Radio Button</p>
+ <input type="radio" name="tamanho" class="radio">Pequeno
+  <input type="radio" name="tamanho"class="radio">Medio
+   <input type="radio" name="tamanho"class="radio">Grande
+    <input type="radio" name="tamanho"class="radio">Outro
+
+    <!-- Criar um grupo de componentes -->
+     <fieldset>
+        <legend>Descrição</legend>
+        <textarea name="" id=""></textarea>
+     </fieldset>
+
+     <input type="submit" value="Enviar">
+     <input type="reset" value="Limpar">
+
+
+
 </form>
 </body>
 </html>

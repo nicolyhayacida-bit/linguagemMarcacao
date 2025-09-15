@@ -1,7 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-}
+
 
 .barra-navegacao{
     background-color: hotpink;
@@ -26,13 +23,29 @@ a{
 }
 .longin{
     background-color: lightpink;
+    margin: 10px 10px;
     color:deeppink;
 }
 
 .formulario{
     background-color: lightpink;
+    width: 400px;
+    margin: 0 auto;
+    /* Alinha o conteudo interno, centraliza */
+    text-align: center;
+}
+.input-nome{
+    /* Remover as bordas */
+    border:nome;
+    /* Aplica curvatura no canto das bordas */
+    border-radius: 2px;
+    margin-left:10px;
+    /* definir opacidade no campo texto */
+    opacity: 70%;
+
 }
 
-.tela-login{
-margin: 1300px;
+
+.cabecalho{
+    margin-left: 1000px;
 }
