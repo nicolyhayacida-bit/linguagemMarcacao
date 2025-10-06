@@ -49,12 +49,16 @@
     width: 150px;
 }
 
-.card-container{
+.card-produtos{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     gap: 0.4rem;
     height: 500px;
-    margin-left: 5px;
+    margin-left: 2px;
     overflow-x:auto;
+}
+.container-famosos{
+    display: flex;
+
 }

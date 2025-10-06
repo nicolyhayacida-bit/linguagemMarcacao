@@ -48,7 +48,6 @@ body{
     padding: 8px 0;
     border-bottom: 3px solid transparent;
 }
-.item:focus,
 .item:hover{
     color: var(--cor-vermelho-ifood);
     border-bottom-color: var(--cor-vermelho-ifood);
@@ -97,8 +96,8 @@ body{
     width: 13vw;
     text-align: center;
     transition: transform 0.2s ease;
-    margin-top: 6rem;
-    margin-left: 2rem;
+    margin-top: 7rem;
+    margin-left: 4rem;
     
 }
 
@@ -107,6 +106,61 @@ body{
 .coluna{
     display: flex;
     flex-direction: row;
+    overflow-x: scroll;
+    margin-left: 4rem;
+}
+.famosos{
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+.foto3{
+    height: 250px;
+}
+.foto4{
+    height: 250px;
+}
+.foto5{
+    height: 250px;
+}
+.card{
+    width: 300px;
+    height: 350px;
+    border: 1px solid #242424;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(34, 34, 34, 0.8);
+    font-family: Arial, Helvetica, sans-serif;
+    transition: transform 0.3s ease;
+    /* Evita que o crad encolha */
+    flex: 0, 0, auto;
+    gap: 40px;
+    margin: 40px;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card-cabecalho{
+    padding: 10px;
+}
+.rodape-principal{
+    background-color: #575757;
+    color: #fff;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.rodape-container{
+    display: flex;
+    gap: 40px;
+
 }
 
-
+.coluna-rodape{flex: 1;} /* Faz com que os elementos ocupem todo o espaço */
+.coluna-rodape h3 {margin-bottom: 20px;}
+.coluna-rodape ul {list-style: none;}
+.coluna-rodape ul li {margin-bottom: 10px;}
+.coluna-rodape a {text-decoration: none; color: #e2e2e2; transition: color 0.2s ease;}
+.coluna-rodape a:hover {color: rgb(255, 100, 100)}
+.icones-sociais a {margin-right: 15px; font-size: 20px;}
+.icones-sociais img {height: 25px; width: 30px;}
