@@ -30,10 +30,43 @@
                 </div>
             </div>
             <div class="acao">
-                <a href="#" class="criar-conta">Criar Conta</a>
+                <a href="#modal-cadastro" class="criar-conta">Criar Conta</a>
                 <button class="botao-entrar">Entrar</button>
             </div>
         </div>
+
+        <!-- Modal criar conta -->
+         <div id="modal-cadastro" class="modal-container">
+          <div class="modal-box">
+            <div class="modal-cabecalho">
+              <!-- Cabecalho -->
+               <h2>Criar Conta</h2>
+                <a href="" class="Fechar">&times</a>
+            </div>
+            <form action="" class="formulario">
+              <!-- Corpo -->
+               <div class="grupo-form">
+                <label for="">Nome completo</label>
+                <input id="nome" placeholder="Digite seu nome completo" required>
+               </div>
+
+               <div class="grupo-form">
+                <label for="">Email</label>
+                <input id="email" placeholder="joaodasneves@ifood.com" required>
+               </div>
+
+               <div class="grupo-form">
+                <label for="">Senha</label>
+                <input id="senha" type="password" placeholder="Crie uma senha forte" required>
+               </div>
+               <button type="submit" class="botao-criar">Criar Conta</button>
+            </form>
+            <div class="modal-rodape">
+              <!-- Rodape -->
+               <p>Já tem conta? <a href=""> Entrar</a></p>
+            </div>
+          </div>
+         </div>
      </header>
      <main>
          <section class="coluna">

@@ -86,10 +86,8 @@ body{
     height: 40vh;
     background-repeat: no-repeat;
 }
-.tamanho-estilo-texto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color:rgb(233, 208, 176);
+
+.tamanho{
+    width: 50%;
+    height: 60vh;
 }
