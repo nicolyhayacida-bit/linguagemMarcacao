@@ -1,0 +1,65 @@
+!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Simples</title>
+
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+      font-family: sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 50px;
+    }
+
+    h1 {
+      margin-bottom: 30px;
+    }
+
+    .quadrado {
+      width: 100px;
+      height: 100px;
+      background-color:blue;
+      margin: 0 auto;
+      border-radius: 8px;
+      transition: all 0.6s ease;
+    }
+
+   
+    @media (min-width: 600px) {
+      .quadrado {
+        width: 150px;
+        height: 150px;
+        background-color: green;
+        border-radius: 25px;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .quadrado {
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        border-radius: 50px;
+      }
+    }
+
+
+    @media (min-width: 1200px) {
+      .quadrado {
+        width: 250px;
+        height: 250px;
+        background-color: purple;
+        border-radius: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Redimensione a janela 👇</h1>
+  <div class="quadrado"></div>
+</body>
+</html>
