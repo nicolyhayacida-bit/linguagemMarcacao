@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placar eletronico</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="./script.js"></script>
+</head>
+<body class="bg-blue-900 text-white flex flex-col items-center justify-center p-4">
+    <header class="mb-8 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-blue-300">Placar Eletronico</h1>
+    </header>
+    
+    <section class="bg-gray-800 text-white flex rounded-lg shadow-2xl items-center justify-around gap-40 p-4">
+        <div class="text-center flex flex-col items-center">
+        <p class="text-2xl font-semibold mb-2">Casa</p>
+        <p id="pt1" class="text-6xl font-bold text-yellow-200 mb-4">0</p>
+        <button onclick="ponto1()" class="bg-blue-700 text-white rounded-lg p-3 hover:bg-blue-900">Gol
+        <button onclick="ponto00()" class="bg-gray-200 text-black rounded-lg p-3 hover:bg-blue-900">Zerar
+        </button>
+        </div>
+        <div class="text-center flex flex-col items-center">
+        <p class="text-2xl font-semibold mb-2">Visitante</p>
+        <p id="pt2" class=" text-6xl font-bold text-yellow-200 mb-4">0</p>
+        <button onclick="ponto2()" class="bg-blue-700 text-white rounded-lg p-3 hover:bg-blue-900">Gol
+        <button onclick="ponto0()" class="bg-gray-200 text-black rounded-lg p-3 hover:bg-blue-900">Zerar</button>
+    </section>
+
+<!-- Basquete placar -->
+ <body class="bg-blue-900 text-white flex flex-col items-center justify-center p-4">
+    <header class="mb-8 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold text-blue-300">Placar Eletronico - Basquete</h1>
+    </body>
+ <section class="bg-gray-800 text-white flex rounded-lg shadow-2xl items-center justify-around gap-40 p-4">
+        <div class="text-center flex flex-col items-center">
+        <p class="text-2xl font-semibold mb-2">Casa</p>
+        <p id="pt3" class="text-6xl font-bold text-yellow-200 mb-4">0</p>
+    
+        <div>
+        <button onclick="pontobasquete1(1)" class="bg-blue-700 text-white rounded-lg p-3 hover:bg-blue-900">+1
+        <button onclick="pontobasquete1(2)" class="bg-blue-700 text-white rounded-lg p-3 hover:bg-blue-900">+2
+        <button onclick="pontobasquete1(3)" class="bg-blue-700 text-white rounded-lg p-3 hover:bg-blue-900">+3
+        </div>
+        </button>
+        </div>
+        <div class="text-center flex flex-col items-center">
+        <p class="text-2xl font-semibold mb-2">Visitante</p>
+        <p id="pt4" class=" text-6xl font-bold text-yellow-200 mb-4">0</p>
+        <div>
+        <button onclick="pontobasquete2()" class="bg-blue-700 text-white rounded-lg p-3 hover:bg-blue-900">+1
+        <button onclick="pontobasquete2()" class="bg-blue-700 text-white rounded-lg p-3 hover:bg-blue-900">+2
+        <button onclick="pontobasquete2()" class="bg-blue-700 text-white rounded-lg p-3 hover:bg-blue-900">+3
+        </div>
+    </section>
+
+    </body>
+</html>
