@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Viagens</title>
+    <!-- Importar script js -->
+    <script defer src="./script.js"></script>
+    <!-- Importar Tawilwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="items-center flex justify-center">
+                <img src="../../Atividades/img/288fa83acb64a024347f6d33fb73c221.jpg" alt="logo" class="h-10">
+                <a href="#" class="text-2xl font-bold text-pink-300">DoçurasDaVovó</a>
+            </div>
+            <div class="hidden md:flex space-x-6 items-center">
+                <div class="relative">
+                    <!-- Menu -->
+                    <button id="gatilho-dropdown-web" class="flex items-center text-pink-400 hover:text-pink-700">
+                        Minha Conta
+                        <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
+                        </svg>
+                    </button>
+                    <div id="menu-dropdown-web"
+                        class="hidden absolute left-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1">
+                        <a href="" class="block px-4 py-2 text-sm text-pink-400 hover:bg-pink-50">Meus pedidos</a>
+                        <a href="" class="block px-4 py-2 text-sm text-pink-400 hover:bg-pink-50">Configurações</a>
+                        <a href="" class="block px-4 py-2 text-sm text-pink-400 hover:bg-pink-50">Sair</a>
+                    </div>
+                </div>
+                <a href="" class="text-pink-600 hover:text-pink-900">Principal</a>
+                <a href="" class="text-pink-600 hover:text-pink-900">Favoritos</a>
+                <a href="" class="text-pink-600 hover:text-pink-900">Promoções</a>
+            </div>
+            <button id="btn-hamburguer" class="md:hidden text-pink-600 focus:outline-none">
+                <!-- Menu hamburguer -->
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Menu Mobile -->
+        <div id="menu-mobile" class="hidden md:hidden bg-white shadow-lg">
+            <div>
+                <button id="gatilho-dropdown-mobile"
+                    class="w-full flex items-center justify-between text-pink-400 hover:text-pink-50 text-left px-6 py-3">
+                    Destinos
+                    <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                    </svg>
+                </button>
+                <div id="menu-dropdown-mobile" class="hidden pl-8">
+                    <a href="" class="block px-4 py-2 text-sm text-pink-400 hover:bg-pink-50">Meus pedidos</a>
+                    <a href="" class="block px-4 py-2 text-sm text-pink-400 hover:bg-pink-50">Configurações</a>
+                    <a href="" class="block px-4 py-2 text-sm text-pink-400 hover:bg-pink-50">Sair</a>
+                </div>
+            </div>
+            <a href="" class="text-pink-400 hover:text-pink-600">Principal</a>
+            <a href="" class="text-pink-400 hover:text-pink-600">Favoritos</a>
+            <a href="" class="text-pink-400 hover:text-pink-600">Promoções</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto mt-6">
+        <section class="relative w-full max-w-4xl mx-auto rounded-lg shadow-xl">
+            <div id="carrossel-container" class="overflow-hidden rounded-lg">
+                <div id="carrossel-slides" class="flex transition-transform
+                duration-500 ease-in-out">
+                    <div class="slide-carrossel min-w-full h-80 bg-pink-500 text-white flex
+                    items-center justify-center">
+                        <img src="../../Atividades/img/vector-illustration-set-cupcakes-decorated-260nw-2408666379.webp"
+                            alt="#" class="h-96">
+                        <h2 class="text-4xl font-bold"></h2>
+                    </div>
+                    <div class="slide-carrossel min-w-full h-80 bg-pink-300 text-pink flex 
+                    items-center justify-center">
+                        <img src="../../Atividades/img/360_F_190226580_qAj8YWNJrlfMBuangLKy6YG0dRWarrTX.jpg" alt="#"
+                            class="h-96">
+                        <h2 class="text-4xl font-bold"></h2>
+                    </div>
+                    <div class="slide-carrossel min-w-full h-80 bg-pink-500 text-white flex 
+                    items-center justify-center">
+                        <img src="../../Atividades/img/10098252.jpg" alt="" class="h-96">
+                        <h2 class="text-4xl font-bold"></h2>
+                    </div>
+                </div>
+            </div>
+            <button id="btn-anterior" class="absolute top-1/2 left-4
+            bg-pink-100/50 hover:bg-pink p-2 rounded-full shadow -translate-y-1/2
+            ">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+            </button>
+            <button id="btn-proximo" class="absolute top-1/2 right-4
+            bg-pink-50/50 hover:bg-pink p-2 rounded-full shadow -translate-y-1/2
+            ">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </button>
+        </section>
+        <!-- texto e imagem colocar a foto -->
+         <section>
+            <a href="#" class=" mt-5 text-2xl font-bold flex justify-center items-center">Recomendados</a>
+            <p class="text-gray-500 flex justify-center items-center">Aproveite nossos melhores produtos</p>
+            <div class="shadow-lg bg-white mt-9">
+            <section class="flex">
+            <div class=" mt-5 text-2xl font-bold flex justify-center items-center w-1/2">
+                <a href="#" class=" mt-5 text-2xl font-bold flex justify-center items-center">Venha provar nossos cupkakes, você irá se maravilhar com nossas doçuras</a>
+            </div>
+            <img src="../../Atividades/img/istockphoto-585303220-612x612.jpg" alt="" class="w-1/2">
+            </section>
+            </div>
+         </section>
+
+    </main>
+</body>
+
+</html>
